@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
+    <link rel="icon" href="./image/title.png" >
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" src="./image/image.jpg" alt="left-banner-img">
+           <div class="heading">
+            <h1 style="color: white;">Latest Tamil</h1>
+            <p style="color: white;">Enjoy Your Day with the playlist</p>
+           </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="controls" onclick="playaudio()" id="play-pause">
+<img  class="play-button" src="image/play-button.svg" alt="play-image">
+        </div>
+        <audio id="song"></audio>
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tr id="song1" onclick="playAll(1)">
+                <td>1</td>
+                <td>Naa Ready (From "Leo")</td>
+                <td>Anirudh Ravichandran,Thalapathy Vijay</td>
+                <td>04:14</td>
+            </tr>
+            <tr id="song2" onclick="playAll(2)">
+                <td>2</td>
+                <td>Hukum - Thalaivar Alappara (From "Jailer")</td>
+                <td>Anirudh Ravichandran</td>
+                <td>03:37</td>
+            </tr>
+            <tr id="song3" onclick="playAll(3)">
+                <td>3</td>
+                <td>Kaavaalaa (From "Jailer")</td>
+                <td>Anirudh Ravichandran,Shilpa Rao</td>
+                <td>03:10</td>
+            </tr>
+            <tr id="song4" onclick="playAll(4)">
+                <td>4</td>
+                <td>Vandha Edam (From "Jawan")</td>
+                <td>Anirudh Ravichandran,Vivek</td>
+                <td>04:12</td>
+            </tr>
+            <tr id="song5" onclick="playAll(5)">
+                <td>5</td>
+                <td>Glimpse of Antony Das (From "Leo")</td>
+                <td>Anirudh Ravichandran</td>
+                <td>00:40</td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
